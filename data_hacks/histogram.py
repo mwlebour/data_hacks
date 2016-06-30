@@ -232,7 +232,7 @@ def histogram(stream, options):
         # track min,max value
         if record.value > max_v:
             max_v = record.value
-        if record.value > min_v:
+        if record.value < min_v:
             min_v = record.value
 
         if options.mvsd:
